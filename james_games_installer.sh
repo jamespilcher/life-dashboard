@@ -204,7 +204,7 @@ echo "Rust packages installation complete."
 echo "=== Cloning GitHub repositories ==="
 
 # GitHub repositories to clone
-github_repos=("")
+github_repos=()
 
 # Create cloned-repos directory if it doesn't exist
 CLONE_DIR="$HOME/src/cloned-repos"
@@ -232,10 +232,15 @@ if [ ${#github_repos[@]} -gt 0 ]; then
 else
   echo "No GitHub repositories to clone."
 fi
-```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````                                                                                                                             ``````````  
+
 echo "GitHub repositories cloning complete."
 
+
+
+# INSTALL go-life
+
+sudo wget https://github.com/sachaos/go-life/releases/download/v0.4.0/go-life_linux_amd64 -O /usr/local/bin/go-life
+
+sudo chmod +x /usr/local/bin/go-life
+
 echo "=== All installations and cloning complete ==="
-
-
-
